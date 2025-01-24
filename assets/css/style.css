@@ -1691,9 +1691,18 @@ svg.f-light {
             transform: scale(1);
   }
 }
+.icon svg {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 10px;
+}
+#text {
+  margin-top: 6px;
+  margin-left: 10px;
+}
 .btn-primary {
-  background-color: #006666 !important;
-  border-color: #006666 !important;
+  background-color: #495f8f !important;
+  border-color: #495f8f !important;
   -webkit-tap-highlight-color: transparent;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -1832,10 +1841,6 @@ svg.f-light {
   border-color: rgba(0, 102, 102, 0.1) !important;
 }
 
-.btn-primary {
-  background-color: var(--theme-deafult) !important;
-  border-color: var(--theme-deafult) !important;
-}
 
 .btn-secondary {
   background-color: var(--theme-secondary) !important;
@@ -1904,14 +1909,14 @@ svg.f-light {
 
 .btn-outline-danger-2x {
   border-width: 2px;
-  border-color: #FE6A49;
-  color: #FE6A49;
-  background-color: transparent;
+  border-color: #2A3650;
+  color: #ffffff;
+  background-color: #2A3650;
 }
 .btn-outline-danger-2x:hover, .btn-outline-danger-2x:focus, .btn-outline-danger-2x:active, .btn-outline-danger-2x.active {
   color: white !important;
-  background-color: #FE6A49 !important;
-  border-color: #FE6A49 !important;
+  background-color: #2A3650 !important;
+  border-color: #2A3650 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -9395,8 +9400,8 @@ textarea {
   padding-left: unset;
 }
 .shopping-wizard .shipping-form .proceed-next {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
 }
 .shopping-wizard .shipping-form .payment-info-wrapper .card-wrapper {
   display: -webkit-box;
@@ -20569,8 +20574,8 @@ p.data-attributes svg {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
 }
 [dir=rtl] .square-group {
   right: unset;
@@ -20895,8 +20900,8 @@ p.data-attributes svg {
 [dir=rtl] .course-wrapper .course-icon-box .arrow-bg {
   left: unset;
   right: 0;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
 }
 @media (max-width: 767px) {
   .course-wrapper .course-icon-box .arrow-bg {
@@ -42714,8 +42719,8 @@ table.table-bordered thead tr th p {
 [dir=rtl] .tagify--select::after {
   right: unset;
   left: 0;
-  -webkit-transform: translate(150%, -50%) scaleX(1.2) rotate(90deg);
-          transform: translate(150%, -50%) scaleX(1.2) rotate(90deg);
+  -webkit-transform: translate(150%, -50%) scVipul Bhai(1.2) rotate(90deg);
+          transform: translate(150%, -50%) scVipul Bhai(1.2) rotate(90deg);
 }
 [dir=rtl] .tagify--select .tagify__tag {
   right: unset;
@@ -45861,12 +45866,12 @@ html[dir=rtl] .revenuegrowth .revenuegrowth-chart::before {
 html[dir=rtl] .img-boostup .img-boostup-img-1 {
   left: unset;
   right: -63px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
 }
 html[dir=rtl] .img-boostup .img-boostup-img-2 {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
   left: unset;
   right: -61px;
 }
@@ -45932,8 +45937,8 @@ html[dir=rtl] .important-project .projectlist-card .range_4 .slider-container .s
   left: 0;
 }
 html[dir=rtl] .add-project .categories {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
   left: 0;
   right: unset;
 }
@@ -47189,8 +47194,8 @@ html[dir=rtl] .updates-faq {
 html[dir=rtl] .categories {
   right: unset;
   left: 0;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scVipul Bhai(-1);
+          transform: scVipul Bhai(-1);
 }
 html[dir=rtl] .categories .learning-header {
   padding-right: 15px;
@@ -48799,12 +48804,12 @@ html[dir=rtl] body.dark-only .page-wrapper .page-body-wrapper .page-body .card:n
     margin-right: 0;
   }
   html[dir=rtl] .product-sidebar {
-    -webkit-transform: translateX(300px) scaleX(1);
-            transform: translateX(300px) scaleX(1);
+    -webkit-transform: translateX(300px) scVipul Bhai(1);
+            transform: translateX(300px) scVipul Bhai(1);
   }
   html[dir=rtl] .product-sidebar.open {
-    -webkit-transform: translateX(0px) scaleX(1);
-            transform: translateX(0px) scaleX(1);
+    -webkit-transform: translateX(0px) scVipul Bhai(1);
+            transform: translateX(0px) scVipul Bhai(1);
   }
   html[dir=rtl] .feature-products .filter-toggle {
     margin-right: 10px;
