@@ -9984,8 +9984,8 @@ textarea {
   font-size: 17px;
 }
 .checkbox-checked .form-check-input:checked {
-  background-color: #006666;
-  border-color: #006666;
+  background-color: #173878;
+  border-color: #173878;
 }
 .checkbox-checked .form-check-input:focus {
   border-color: #006666;
