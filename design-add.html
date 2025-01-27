@@ -9,7 +9,7 @@
 <meta name="author" content="pixelstrap">
 <link rel="icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
 <link rel="shortcut icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
-<title>Unique IT Solution</title>
+<title>Admin</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -183,7 +183,7 @@
                   <i class="fa fa-briefcase text-white" aria-hidden="true"></i>
                   <span class="lan-7">Mock Up</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="add-Mock-Up.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
+                    <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
                     <li><a href="Mock-Up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
                   </ul>
                 </li>
@@ -194,7 +194,8 @@
                   <ul class="sidebar-submenu">
                     <li><a href="dealer-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Dealer</a></li>
                     <li><a href="dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Dealer List</a></li>
-                  </ul>
+<li><a href="update-by-dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design by Dealer List</a></li>
+</ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="inquiry-list.html">
@@ -255,45 +256,8 @@
                             <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
                               <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
                                 <form class="row g-3 needs-validation" novalidate="">
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="manufacturer">Manufacturer<span class="txt-danger">*</span></label>
-                                    <select class="form-select" id="manufacturer" required="">
-                                      <option selected="" disabled="" value="">Select Manufacturer</option>
-                                      <option value="Simpolo">Simpolo</option>
-                                      <option value="Kajariya">Kajariya</option>
-                                    </select>
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="wholesaler">Wholesaler<span class="txt-danger">*</span></label>
-                                    <select class="form-select" id="wholesaler" required="">
-                                      <option selected="" disabled="" value="">Select Wholesaler</option>
-                                      <option value="Patel Agency">Patel Agency</option>
-                                      <option value="Spencera">Spencera</option>
-                                    </select>
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <script>
-                                    const manufacturerDropdown = document.getElementById("manufacturer");
-                                    const wholesalerDropdown = document.getElementById("wholesaler");
-                                  
-                                    manufacturerDropdown.addEventListener("change", function () {
-                                      if (manufacturerDropdown.value) {
-                                        wholesalerDropdown.disabled = true;
-                                      } else {
-                                        wholesalerDropdown.disabled = false;
-                                      }
-                                    });
-                                  
-                                    wholesalerDropdown.addEventListener("change", function () {
-                                      if (wholesalerDropdown.value) {
-                                        manufacturerDropdown.disabled = true;
-                                      } else {
-                                        manufacturerDropdown.disabled = false;
-                                      }
-                                    });
-                                  </script>
+                              
+                                
                                   <div class="col-sm-6">
                                     <label class="form-label" for="customName"> Name<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customName" type="text" placeholder="Name" required="">
@@ -645,11 +609,27 @@
                                     </div>
                                   </div>
                                 </div>
+                                <style>
+                                  .ck-blurred{
+                                    height : 200px;
+                                  }
+                                </style>
+                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
                                 <div class="col-12">
-                                  <label class="form-label" for="customLongDescription"> Long Description<span class="txt-danger">*</span></label>
-                                  <textarea class="form-control" id="customLongDescription" type="text" placeholder="Long Description" required=""></textarea>
-                                  <div class="valid-feedback">Looks good!</div>
+                                  <label class="form-label" for="editor">Long Description</label>
+                                  <div id="editor">
+                                   <!-- Set height to 200px -->
                                 </div>
+                                
+                                <script>
+                                  // Initialize CKEditor
+                                  ClassicEditor
+                                    .create(document.querySelector('#editor'))
+                                    .catch(error => {
+                                      console.error(error);
+                                    });
+                                </script>
+                                
                                 <div class="col-12">
 
                                
@@ -702,6 +682,7 @@
               <!-- Zero Configuration  Ends-->
             </div>
           </div>
+      </div>
           
           <!-- Container-fluid Ends-->
         </div>
@@ -715,7 +696,6 @@
             </div>
           </div>
         </footer>
-      </div>
     </div>
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
