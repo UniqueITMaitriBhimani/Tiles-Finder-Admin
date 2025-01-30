@@ -280,20 +280,21 @@
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <label class="form-label" for="property-type">Email / UserName<span
-                              class="txt-danger">*</span></label>
-                            <div>
-                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Email"
-                                required="" id="property-type">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-md-6">
                             <label class="form-label" for="property-type">Manufacturer Code <span
                                 class="txt-danger">*</span></label>
                             <div>
                               <input class="form-control w-100 rounded" type="text" value="" placeholder="Enter GST Number"
+                                required="" id="property-type">
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="property-type">Email / UserName<span
+                              class="txt-danger">*</span></label>
+                            <div>
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Email"
                                 required="" id="property-type">
                             </div>
                           </div>
@@ -432,71 +433,7 @@
                   </table>
                 </div>
                 <!--start size table js-->
-                <!-- <script>
-                  let rowCount = 1;  // To keep track of the row number
-                
-                  document.getElementById('addButton').addEventListener('click', function (event) {
-                    // Prevent page refresh (e.g., form submission)
-                    event.preventDefault();
-                
-                    var size = document.getElementById('sizeDropdown').value;
-                    var netQuantity = document.getElementById('netQuantity').value;
-                
-                    // Validate inputs
-                    if (size && netQuantity && netQuantity > 0) {
-                      // Get the table body
-                      var table = document.getElementById('valueTable').getElementsByTagName('tbody')[0];
-                
-                      // Create a new row
-                      var newRow = table.insertRow(table.rows.length);  // Append row at the end
-                
-                      // Insert cells for No., Size, Quantity, and Action
-                      var cell1 = newRow.insertCell(0); // No.
-                      var cell2 = newRow.insertCell(1); // Size
-                      var cell3 = newRow.insertCell(2); // Quantity
-                      var cell4 = newRow.insertCell(3); // Action (Edit/Delete)
-                
-                      // Assign values to the cells
-                      cell1.textContent = rowCount;
-                      cell2.textContent = size;
-                      cell3.textContent = netQuantity;
-                
-                      // Create Edit button
-                      var editButton = document.createElement('button');
-                      editButton.textContent = 'Edit';
-                      editButton.classList.add('btn', 'btn-warning', 'btn-sm', 'me-2');
-                      editButton.onclick = function () {
-                        // When Edit is clicked, populate the fields and allow editing
-                        document.getElementById('sizeDropdown').value = size;
-                        document.getElementById('netQuantity').value = netQuantity;
-                        newRow.remove(); // Remove the current row (it will be re-added after editing)
-                      };
-                
-                      // Create Delete button
-                      var deleteButton = document.createElement('button');
-                      deleteButton.textContent = 'Delete';
-                      deleteButton.classList.add('btn', 'btn-danger', 'btn-sm');
-                      deleteButton.onclick = function () {
-                        // When Delete is clicked, remove the row
-                        newRow.remove();
-                      };
-                
-                      // Add buttons to the Action column
-                      cell4.appendChild(editButton);
-                      cell4.appendChild(deleteButton);
-                
-                      // Increment the row count
-                      rowCount++;
-                
-                      // Clear the input fields after adding
-                      document.getElementById('netQuantity').value = '';
-                    } else {
-                      alert('Please select size and enter a valid net quantity.');
-                    }
-                  });
-                </script>
-                 -->
-                <!--end size table js-->
+                 <!--end size table js-->
               </div>
     
               <!-- </div> -->
@@ -612,6 +549,30 @@
                 
                 <!--end size table js-->
               </div>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="customUserName">longitude</label>
+
+                  <div>
+                    <input class="form-control" id="customUserName" type="UserName"
+                    placeholder="longitude" required="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="customUserName">latitude</label>
+
+                  <div>
+                    <input class="form-control" id="customUserName" type="UserName"
+                    placeholder="latitude" required="">
+                  </div>
+                </div>
+              </div>
+           
+            <div class="col-12 mt-3">
+              
+              <label class="form-label" for="exampleFormControlTextarea1">Google Map Link </label>
+              <input class="form-control" type="text" id="exampleFormControlTextarea1" rows="3" placeholder="Google Map Link ">
+            </div>
                         <div class="row mb-3 mt-4">
                           <div class="col-md-12">
                             <label class="form-label" for="property-name">Remarks</label>

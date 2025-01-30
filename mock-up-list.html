@@ -287,6 +287,22 @@
                               <option>Parking</option>
                             </select>
                           </div>    
+                          <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
+                            <label class="form-label" for="DesignName">Manufacturer</label>
+                            <select class="form-select" id="customState-wizard" required="">
+                              <option selected="" disabled="" value="">Select Manufacturer </option>
+                              <option>Simpolo</option>
+                              <option>Famous</option>
+                            </select>
+                          </div>    
+                          <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
+                            <label class="form-label" for="DesignName">Wholesaler</label>
+                            <select class="form-select" id="customState-wizard" required="">
+                              <option selected="" disabled="" value="">Select Wholesaler </option>
+                              <option>Spencera</option>
+                              <option>Skylark</option>
+                            </select>
+                          </div>    
                           <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                             <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                             <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
@@ -310,16 +326,27 @@
                                   <thead>
                                     <tr class="bg-light text-dark">
                                       <th class="text-center">No.</th>
+                                      <th class="text-center">Mockup Name</th>
                                       <th class="text-center">Image</th>
-                                      <th class="text-center">Design</th> 
+                                      <th class="text-center">Total Designs</th> 
+                                      <th class="text-center">Areas</th> 
+                                      <th class="text-center">Created By</th> 
                                       <th class="text-center">Action</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
                                       <td class="text-center table-data">1</td>
+                                      <td class="text-center table-data">SnowWhite</td>
+
                                       <td class="text-center table-data"><img src="assets/images/demo img.avif" width="70px" height="70px" alt=""></td>
                                       <td class="text-center table-data">6</td>
+                                      <td class="text-center table-data"> <span class="badge rounded-pill badge-secondary p-1">Bathroom</span> <span class="badge rounded-pill badge-secondary p-1">Parking</span></td>
+                                      <td class="text-center table-data">
+                                        Simpolo  
+                                        <span class="badge rounded-pill badge-secondary p-1">Manufacturer</span>
+                                      </td>
+                                      
                                       <td class="text-center col-fix table-data"> 
                                         <ul class="action d-flex justify-content-center"> 
                                           <li class="edit"> <a href="add-blog.html" class="bg-primary p-2 rounded"><i class="fa fa-plus-square text-white" aria-hidden="true"></i></a></li>
@@ -330,8 +357,16 @@
                                     </tr>
                                     <tr>
                                       <td class="text-center table-data">2</td>
+                                      <td class="text-center table-data">SnowWhite</td>
+
                                       <td class="text-center table-data"><img src="assets/images/demo 2.jpg" width="70px" height="70px" alt=""></td>
                                       <td class="text-center table-data">6</td>
+                                      <td class="text-center table-data"> <span class="badge rounded-pill badge-secondary p-1">Bathroom</span> <span class="badge rounded-pill badge-secondary p-1">Parking</span></td>
+                                      <td class="text-center table-data">
+                                        Simpolo  
+                                        <span class="badge rounded-pill badge-secondary p-1">Admin</span>
+                                      </td>
+                                      
                                       <td class="text-center col-fix table-data"> 
                                         <ul class="action d-flex justify-content-center"> 
                                           <li class="edit"> <a href="add-blog.html" class="bg-primary p-2 rounded"><i class="fa fa-plus-square text-white" aria-hidden="true"></i></a></li>

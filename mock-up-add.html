@@ -258,32 +258,34 @@
                                 <form class="row g-3 needs-validation" novalidate="">
                                 
                                   <div class="col-sm-6">
-                                    <label class="form-label" for="customName"> Name<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customName">Mockup Name<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customName" type="text" placeholder="Name" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-sm-6">
-                                    <label class="form-label" for="customUrl">URL<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customUrl">Mockup URL<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customUrl" type="URL" placeholder=" URL" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-12"> 
-                                    <label class="form-label" for="formFile1">MockUP Image<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="formFile1">Choose MockUP Image<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
                                     <div class="invalid-feedback">Invalid form file selected</div>
                                   </div>
                                   <div class="col-12">
-                                    <label class="form-label" for="customState-wizard">Is 360° </label><span class="txt-danger">*</span>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select Size</option>
-                                      <option>YES</option>
-                                      <option>No</option>
-                                    </select>
+                                    <div class="media">
+                                      <label class="col-form-label m-r-10">Is 360° Available<span class="txt-danger">*</span></label>
+                                      <div class="media-body text-end">
+                                        <label class="switch">
+                                          <input type="checkbox" checked=""><span class="switch-state"></span>
+                                        </label>
+                                    </div>
+                                  
                                     <div class="invalid-feedback">Please select a valid state.</div>
                                   </div>
 
                                   <div class="col-12"> 
-                                    <label class="form-label" for="formFile1">360° Image</label>
+                                    <label class="form-label" for="formFile1">Choose 360° Image</label>
                                     <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
                                     <div class="invalid-feedback">Invalid form file selected</div>
                                   </div>
@@ -316,24 +318,32 @@
                                   <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
                                     <!-- Header Section -->
                                    
-                                    <h4 class="">Select Design of Mockup</h4>
+                                    <h4 class="">Select Tiles Design for Mockup</h4>
                                     
                                     <!-- File and Sequence Input Section -->
                                     <div class="row mt-3">
-                                      <div class="col-sm-5"> 
-                                        <label class="form-label" for="formFile1">Design Image</label>
+                                      <div class="col-md-3"> 
+                                        <label class="form-label" for="formFile1">Select Brand</label>
+                                        <select class="form-select" id="manufacturer" required="">
+                                          <option selected="" disabled="" value="">Select Brand</option>
+                                          <option value="Simpolo">Spencera</option>
+                                          <option value="Kajariya">Famous</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-3"> 
+                                        <label class="form-label" for="formFile1">Select Design</label>
                                         <select class="form-select" id="manufacturer" required="">
                                           <option selected="" disabled="" value="">Select Design</option>
                                           <option value="Simpolo">Snow White</option>
                                           <option value="Kajariya">Black PLain</option>
                                         </select>
                                       </div>
-                                      <div class="col-sm-5">
+                                      <div class="col-md-3">
                                         <label class="form-label" for="customSequence">Sequence<span class="txt-danger">*</span></label>
                                         <input class="form-control" id="customSequence" type="Sequence" placeholder=" Sequence" required="">
                                         <div class="valid-feedback">Looks good!</div>
                                       </div>
-                                      <div class="col-sm-2">
+                                      <div class="col-md-3">
                                         <div class="d-flex justify-content-end align-items-center mt-4">
                                           <div class="btn-showcase text-start">
                                             <a href="finish-add.html">
@@ -358,6 +368,7 @@
                                                       <tr class="bg-light text-dark">
                                                         <th class="text-center">No.</th>
                                                         <th class="text-center">Image</th>
+                                                        <th class="text-center">Brand</th>
                                                         <th class="text-center">Sequence</th> 
                                                         <th class="text-center">Action</th>
                                                       </tr>
@@ -367,6 +378,9 @@
                                                         <td class="text-center table-data">1</td>
                                                         <td class="text-center table-data">
                                                           <img src="assets/images/demo img.avif" width="70px" height="70px" alt="">
+                                                        </td>
+                                                        <td class="text-center table-data">
+                                                          Famous
                                                         </td>
                                                         <td class="text-center table-data">6</td>
                                                         <td class="d-flex justify-content-center"> 
@@ -388,6 +402,9 @@
                                                         <td class="text-center table-data">2</td>
                                                         <td class="text-center table-data">
                                                           <img src="assets/images/demo 2.jpg" width="70px" height="70px" alt="">
+                                                        </td>
+                                                        <td class="text-center table-data">
+                                                          Famous
                                                         </td>
                                                         <td class="text-center table-data">6</td>
                                                         <td class="d-flex justify-content-center"> 
