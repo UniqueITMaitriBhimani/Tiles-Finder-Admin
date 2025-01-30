@@ -273,7 +273,7 @@
                         <div class="row mb-3">
                           <div class="col-md-6">
                             <label class="form-label" for="property-name">Mobile Number<span
-                                class="txt-danger">*</span></label>
+                              class="txt-danger">*</span></label>
                             <div>
                               <input class="form-control w-100 rounded" type="text" value="" placeholder="Mobile Number"
                                 required="" id="property-name">
@@ -281,6 +281,24 @@
                           </div>
                           <div class="col-md-6">
                             <label class="form-label" for="property-type">Email<span
+                              class="txt-danger">*</span></label>
+                            <div>
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Email"
+                                required="" id="property-type">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="property-name">Wholesaler Code<span
+                                class="txt-danger">*</span></label>
+                            <div>
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Mobile Number"
+                                required="" id="property-name">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="property-type">Password<span
                                 class="txt-danger">*</span></label>
                             <div>
                               <input class="form-control w-100 rounded" type="text" value="" placeholder="Email"
@@ -293,7 +311,8 @@
                           <div class="card-body">
                         <div class="row mb-3">
                           <div class="col-md-12">
-                              <label class="form-label" for="MaltipleDropdown">Category</label>
+                              <label class="form-label" for="MaltipleDropdown">Category<span
+                                class="txt-danger">*</span></label>
                               <select class="form-select" id="MaltipleDropdown">
                                   <option selected="">Select Category</option>
                                   <option value="1">GVT</option>
@@ -369,14 +388,16 @@
                 <div class="card-body">
                   <div class="row mt-3 mb-4">
                     <div class="col-md-4">
-                      <label for="sizeDropdown" class="form-label">Size</label>
+                      <label for="sizeDropdown" class="form-label">Size<span
+                        class="txt-danger">*</span></label>
                       <select id="sizeDropdown" class="form-select">
                         <option value="Small">120*1200 mm</option>
                         <option value="Medium">320*1200 mm</option>
                       </select>
                     </div>
                     <div class="col-md-4">
-                      <label for="netQuantity" class="form-label">Net Quantity</label>
+                      <label for="netQuantity" class="form-label">Net Quantity<span
+                        class="txt-danger">*</span></label>
                       <input type="number" id="netQuantity" class="form-control" placeholder="Enter Net Quantity"
                         min="1" />
                     </div>
@@ -475,27 +496,19 @@
               <!-- </div> -->
     
               <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-5">
-                <h4>Select Brand</h4>
+                <h4>Select brand</h4>
                 <div class="card-body">
                   <div class="row mt-3 mb-4">
-                    <div class="col-md-4">
-                      <label for="brandDropdown" class="form-label">Manufacturer</label>
-                      <select id="brandDropdown" class="form-select">
-                        <option value="">Select Manufacturer</option>
-                        <option value="Spencera">Spencera</option>
-                        <option value="Simpolo">Simpolo</option>
-                      </select>
+                    <div class="col-md-2">
                     </div>
-
                     <div class="col-md-4">
-                      <label for="brandDropdown" class="form-label">Brand</label>
-                      <select id="brandDropdown" class="form-select">
-                        <option value="Spencera">Spencera</option>
-                        <option value="Diccasa">Diccasa</option>
-                        <option value="Simpolo">Simpolo</option>
-                      </select>
+                      <label for="brandDropdown" class="form-label">Brand<span
+                        class="txt-danger">*</span></label>
+                      <input type="number" id="netQuantity" class="form-control" placeholder="Enter Brand Name"
+                        min="1" />
                     </div>
-                   
+                    <div class="col-md-2">
+                    </div>
                     <!-- <div class="col-md-4">
                     </div> -->
                     <div class="col-md-4 d-flex align-items-end">
@@ -503,8 +516,8 @@
                     </div>
                   </div>
                   <div class="container">
-                    <table id="valueTable1" class="table able-striped table-bordered">
-                      <thead>
+                    <table id="valueTable" class="table table-striped table-bordered">
+                      <thead class="thead-dark">
                         <tr>
                           <th>No.</th>
                           <th>Brand</th>
@@ -512,7 +525,16 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <!-- Rows will be added dynamically here -->
+                        <td>
+                          1
+                         </td>
+                         <td>Spencera</td>
+                         <td class="d-flex justify-content-center"> 
+                          <ul class="action"> 
+                            <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
+                            <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </td>
                       </tbody>
                     </table>
                   </div>
@@ -586,8 +608,7 @@
               </div>
                         <div class="row mb-3 mt-4">
                           <div class="col-md-12">
-                            <label class="form-label" for="property-name">Remarks<span
-                                class="txt-danger">*</span></label>
+                            <label class="form-label" for="property-name">Remarks</label>
                             <div>
                               <textarea class="form-control w-100 rounded" value="" placeholder="Ener Remarks"
                               required="" id="property-name"> </textarea>

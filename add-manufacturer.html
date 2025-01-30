@@ -8,39 +8,39 @@
     <meta name="description" content="Riho admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Riho admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href=".assets/images/logo/Unique_it.jpg" type="image/x-icon">
-    <link rel="shortcut icon" href=".assets/images/logo/Unique_it.jpg" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo/Unique_it.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/Unique_it.jpg" type="image/x-icon">
     <title>Admin</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href=".assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/flag-icon.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css">
     <!-- Font Awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href=".assetscss/vendors/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href=".assetscss/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href=".assetscss/vendors/echart.css">
-    <link rel="stylesheet" type="text/css" href=".assetscss/vendors/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/echart.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/date-picker.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href=".assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href=".assetscss/style.css">
-    <link id="color" rel="stylesheet" href=".assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href=".assetscss/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
   </head>
   <body> 
     <!-- loader starts-->
@@ -273,14 +273,32 @@
                         <div class="row mb-3">
                           <div class="col-md-6">
                             <label class="form-label" for="property-name">Mobile Number<span
-                                class="txt-danger">*</span></label>
+                              class="txt-danger">*</span></label>
                             <div>
                               <input class="form-control w-100 rounded" type="text" value="" placeholder="Mobile Number"
                                 required="" id="property-name">
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <label class="form-label" for="property-type">Email<span
+                            <label class="form-label" for="property-type">Email / UserName<span
+                              class="txt-danger">*</span></label>
+                            <div>
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Email"
+                                required="" id="property-type">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="property-type">Manufacturer Code <span
+                                class="txt-danger">*</span></label>
+                            <div>
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Enter GST Number"
+                                required="" id="property-type">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="property-type">Password<span
                                 class="txt-danger">*</span></label>
                             <div>
                               <input class="form-control w-100 rounded" type="text" value="" placeholder="Email"
@@ -293,7 +311,8 @@
                           <div class="card-body">
                         <div class="row mb-3">
                           <div class="col-md-12">
-                              <label class="form-label" for="MaltipleDropdown">Category</label>
+                              <label class="form-label" for="MaltipleDropdown">Category<span
+                                class="txt-danger">*</span></label>
                               <select class="form-select" id="MaltipleDropdown">
                                   <option selected="">Select Category</option>
                                   <option value="1">GVT</option>
@@ -369,7 +388,8 @@
                 <div class="card-body">
                   <div class="row mt-3 mb-4">
                     <div class="col-md-4">
-                      <label for="sizeDropdown" class="form-label">Size</label>
+                      <label for="sizeDropdown" class="form-label">Size<span
+                        class="txt-danger">*</span></label>
                       <select id="sizeDropdown" class="form-select">
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
@@ -377,7 +397,8 @@
                       </select>
                     </div>
                     <div class="col-md-4">
-                      <label for="netQuantity" class="form-label">Net Quantity</label>
+                      <label for="netQuantity" class="form-label">Net Quantity<span
+                        class="txt-danger">*</span></label>
                       <input type="number" id="netQuantity" class="form-control" placeholder="Enter Net Quantity"
                         min="1" />
                     </div>
@@ -487,7 +508,8 @@
                     <div class="col-md-2">
                     </div>
                     <div class="col-md-4">
-                      <label for="brandDropdown" class="form-label">Brand</label>
+                      <label for="brandDropdown" class="form-label">Brand<span
+                        class="txt-danger">*</span></label>
                       <input type="number" id="netQuantity" class="form-control" placeholder="Enter Brand Name"
                         min="1" />
                     </div>
@@ -592,8 +614,7 @@
               </div>
                         <div class="row mb-3 mt-4">
                           <div class="col-md-12">
-                            <label class="form-label" for="property-name">Remarks<span
-                                class="txt-danger">*</span></label>
+                            <label class="form-label" for="property-name">Remarks</label>
                             <div>
                               <textarea class="form-control w-100 rounded" value="" placeholder="Ener Remarks"
                               required="" id="property-name"> </textarea>
@@ -634,9 +655,9 @@
     <!-- latest jquery-->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
-    <script src="assetsjs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->
-    <script src="assetsjs/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
     <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
     <!-- scrollbar js-->
     <script src="assets/js/scrollbar/simplebar.js"></script>
@@ -647,7 +668,7 @@
     <script src="assets/js/sidebar-menu.js"></script>
     <script src="assets/js/sidebar-pin.js"></script>
     <script src="assets/js/slick/slick.min.js"></script>
-    <script src="assetsjs/slick/slick.js"></script>
+    <script src="assets/js/slick/slick.js"></script>
     <script src="assets/js/header-slick.js"></script>
     <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
     
