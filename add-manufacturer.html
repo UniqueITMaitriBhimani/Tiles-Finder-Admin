@@ -271,7 +271,7 @@
                         </div>
     
                         <div class="row mb-3">
-                          <div class="col-md-6">
+                          <div class="col-md-4">
                             <label class="form-label" for="property-name">Mobile Number<span
                               class="txt-danger">*</span></label>
                             <div>
@@ -279,11 +279,18 @@
                                 required="" id="property-name">
                             </div>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-4">
                             <label class="form-label" for="property-type">Manufacturer Code <span
                                 class="txt-danger">*</span></label>
                             <div>
-                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Enter GST Number"
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Manufacturer Code"
+                                required="" id="property-type">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="form-label" for="property-type">Sequence</label>
+                            <div>
+                              <input class="form-control w-100 rounded" type="text" value="" placeholder="Sequence"
                                 required="" id="property-type">
                             </div>
                           </div>
@@ -442,15 +449,17 @@
                 <h4>Select brand</h4>
                 <div class="card-body">
                   <div class="row mt-3 mb-4">
-                    <div class="col-md-2">
-                    </div>
+                  
                     <div class="col-md-4">
                       <label for="brandDropdown" class="form-label">Brand<span
                         class="txt-danger">*</span></label>
                       <input type="number" id="netQuantity" class="form-control" placeholder="Enter Brand Name"
                         min="1" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
+                      <label for="brandDropdown" class="form-label">Sequence</label>
+                      <input type="number" id="netQuantity" class="form-control" placeholder="Sequence"
+                        min="1" />
                     </div>
                     <!-- <div class="col-md-4">
                     </div> -->

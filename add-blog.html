@@ -300,7 +300,12 @@
                               </select>
                               <div class="valid-feedback">Looks good!</div>
                             </div>
-
+                            <div class="col-6">
+                              <label class="form-label" for="customsequence">Sequence</label>
+                              <input class="form-control" id="customsequence" type="text" placeholder=" Sequence"
+                                required="">
+                              <div class="valid-feedback">Looks good!</div>
+                            </div>
                          
                             <script>
                               const manufacturerDropdown = document.getElementById("manufacturer");
@@ -333,9 +338,15 @@
                                 class="txt-danger">*</span></label>
                               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <div class="col-12">
+                            <div class="col-6">
                               <label class="form-label" for="formFile1">Choose Blog Image</label>
                               <input class="form-control" id="formFile1" type="file" aria-label="file example"
+                                required="">
+                              <div class="invalid-feedback">Invalid form file selected</div>
+                            </div>
+                            <div class="col-6">
+                              <label class="form-label" for="formFile1">Alt Tag</label>
+                              <input class="form-control" id="formFile1" type="test" aria-label="file example" placeholder="Alt Tag"
                                 required="">
                               <div class="invalid-feedback">Invalid form file selected</div>
                             </div>
@@ -361,13 +372,7 @@
                             </script>
                             
                           
-                            <div class="col-12">
-                              <label class="form-label" for="customsequence">Sequence<span
-                                  class="txt-danger">*</span></label>
-                              <input class="form-control" id="customsequence" type="text" placeholder=" Sequence"
-                                required="">
-                              <div class="valid-feedback">Looks good!</div>
-                            </div>
+                           
                             <!-- <div class="col-sm-6">
                               <label class="form-label" for="customMetaTitle"> Meta Title<span
                                   class="txt-danger">*</span></label>
