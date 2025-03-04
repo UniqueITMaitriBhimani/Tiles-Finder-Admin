@@ -395,7 +395,7 @@
                 <h4>Select Size</h4>
                 <div class="card-body">
                   <div class="row mt-3 mb-4">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <label for="sizeDropdown" class="form-label">Size<span
                         class="txt-danger">*</span></label>
                       <select id="sizeDropdown" class="form-select">
@@ -404,13 +404,22 @@
                         <option value="Large">Large</option>
                       </select>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                      <label for="sizeDropdown" class="form-label">Thinkness<span
+                        class="txt-danger">*</span></label>
+                      <select id="sizeDropdown" class="form-select">
+                        <option value="Small">5 mm </option>
+                        <option value="Medium">10 mm</option>
+                        <option value="Large">15 mm</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
                       <label for="netQuantity" class="form-label">Net Quantity<span
                         class="txt-danger">*</span></label>
                       <input type="number" id="netQuantity" class="form-control" placeholder="Enter Net Quantity"
                         min="1" />
                     </div>
-                    <div class="col-md-4 align-items-end text-end">
+                    <div class="col-md-3 align-items-end text-end">
                       <button id="addButton" class="btn btn-primary">Add</button>
                     </div>
                   </div>
@@ -452,9 +461,12 @@
                   
                     <div class="col-md-4">
                       <label for="brandDropdown" class="form-label">Brand<span
-                        class="txt-danger">*</span></label>
-                      <input type="number" id="netQuantity" class="form-control" placeholder="Enter Brand Name"
-                        min="1" />
+                        class="txt-danger"></span></label>
+                        <select id="sizeDropdown" class="form-select">
+                          <option value="Small">Simpolo </option>
+                          <option value="Medium">Spencera</option>
+                          <option value="Large">Famous</option>
+                        </select>
                     </div>
                     <div class="col-md-4">
                       <label for="brandDropdown" class="form-label">Sequence</label>
